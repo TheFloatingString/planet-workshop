@@ -9,16 +9,6 @@ class Planet:
 		self.total_resources = 1000
 		self.total_resources_list = []
 			
-        
-    # def step(self):
-	# 	# self.population = self.population * self.population_growth_rate
-	# 	self.total_resources -= self.population*0.01
-	# 	self.birth_rate = self.total_resources/self.population
-	# 	if self.birth_rate > 4:
-	# 		self.birth_rate = 4
-	# 	# self.death_rate = 1
-	# 	self.population *= (self.birth_rate)/(self.death_rate)
-	# 	self.population_list.append(self.population)
 
 	def step(self):
 		self.population *= self.birth_rate
@@ -29,4 +19,4 @@ class Planet:
 
 
 	def render(self):
-		plt.plot(self.population_list)
+		plt.plot(self.population_list, c="blue")

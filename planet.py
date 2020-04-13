@@ -8,5 +8,5 @@ class Planet:
 		self.population = self.population * self.population_growth
 		
 	def run(self, iterations):
-		step(iterations)
+		self.step(iterations)
 		self.population_list.append(self.population)
